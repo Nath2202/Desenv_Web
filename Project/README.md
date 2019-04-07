@@ -8,12 +8,12 @@ Instalar NodeJS LTS
 
 # Installing
 ``` 
-clonar o projeto no diretório C:/Users/
+clonar o projeto no diretório C:/Users/ (questões de permissionamento)
 ``` 
 
 ## Build Setup
 ```
-abir npm bash Admin mode
+abir NodeJS bash Admin mode
 acessar diretório do projeto no bash
 ```
 
