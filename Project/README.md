@@ -1,19 +1,17 @@
-# mdbreact-admin-template-free
-
-> MDB - React Admin Dashboard Free
+# Gerenciador Acadêmico
 
 ## Build Setup
+``` instalar NodeJS LTS version
+``` clonar o projeto no diretório C:/Users/
+``` abir npm bash Admin mode
+``` acessar diretório do projeto no bash
 
-``` bash
-# install dependencies
-yarn
+# instalar dependências
+npm install
 
-# serve with hot reload at localhost:8080
-yarn start
+# build para produção
+npm run-script build
 
-# build for production with minification
-yarn build
+# servidor com reload dinâmico em localhost:3000
+npm run start
 
-# build for production and view the bundle analyzer report
-yarn build --report
-```
