@@ -20,6 +20,7 @@ acessar diretório do projeto no bash
 ## Install dependencies
 ```
 npm install
+npm audit fix
 ```
 
 ## Build for production
