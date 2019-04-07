@@ -17,17 +17,17 @@ abir npm bash Admin mode
 acessar diretório do projeto no bash
 ```
 
-## instalar dependências
+## Install dependencies
 ```
 npm install
 ```
 
-## build para produção
+## Build for production
 ```
 npm run-script build
 ```
 
-## servidor com reload dinâmico em localhost:3000
+## Server
 ```
 npm run start
 ```
