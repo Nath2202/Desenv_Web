@@ -15,12 +15,7 @@ const TopNavigation = () => {
                         Página Inicial
                     </MDBListGroupItem>
                 </NavLink>
-                {/* <NavLink to="/profile" activeClassName="activeClass">
-                    <MDBListGroupItem>
-                        <MDBIcon icon="user" className="mr-3"/>
-                        Profile
-                    </MDBListGroupItem>
-                </NavLink> */}
+                {}
                 <NavLink to="/tables" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon icon="table" className="mr-3"/>
