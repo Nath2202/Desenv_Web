@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Text;
+using Data.Repositories.MySqlRepository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -12,8 +13,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.IdentityModel.Tokens;
 using Swashbuckle.AspNetCore.Swagger;
+using tecweb2.webapi.Businesses;
 using tecweb2.webapi.Contexts;
 using tecweb2.webapi.Extensions.Swagger;
+using tecweb2.webapi.Repositories.Interfaces;
 
 namespace tecweb2.webapi
 {
@@ -70,6 +73,9 @@ namespace tecweb2.webapi
                     "tecweb2.xml");
                 c.IncludeXmlComments(filePath);
             });
+
+            services.AddScoped<AuthBusiness>();
+            services.AddScoped<IUsersRepository, UsersRepository>();
             
             services.AddAuthentication(options =>
             {
