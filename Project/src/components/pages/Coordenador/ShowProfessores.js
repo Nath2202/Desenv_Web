@@ -17,8 +17,14 @@ const ShowProfessores = () => {
         width: 150
       },
       {
+        label: 'Telefone',
+        field: 'tel',
+        sort: 'asc',
+        width: 150
+      },
+      {
         label: 'Disciplina',
-        field: 'id',
+        field: 'codDisciplina',
         sort: 'asc',
         width: 150
       }

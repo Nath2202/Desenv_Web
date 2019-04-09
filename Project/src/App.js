@@ -4,11 +4,17 @@ import TopNavigation from './components/topNavigation';
 import SideNavigation from './components/sideNavigation';
 import Footer from './components/Footer';
 import './index.css';
-import './App.css';
-import firebase from './Firebase';
+import firebase from './utils/Firebase';
 
 
 class App extends Component {
+//   state = {
+//     data: []
+// };
+
+// componentDidMount() {
+//     FirebaseService.getDataList('leituras', (dataReceived) =>    this.setState({data: dataReceived}))
+// }
   render() {
     return (
             <div className="flexible-content">

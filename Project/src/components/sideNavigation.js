@@ -22,18 +22,18 @@ const TopNavigation = () => {
                         Plano de Ensino
                     </MDBListGroupItem>
                 </NavLink>
-                <NavLink to="/maps" activeClassName="activeClass">
+                {/* <NavLink to="/maps" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon icon="map" className="mr-3"/>
-                        Maps
+                        
                     </MDBListGroupItem>
                 </NavLink>
                 <NavLink to="/404" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon icon="exclamation" className="mr-3"/>
-                        404
+                        
                     </MDBListGroupItem>
-                </NavLink>
+                </NavLink> */}
             </MDBListGroup>
         </div>
     );

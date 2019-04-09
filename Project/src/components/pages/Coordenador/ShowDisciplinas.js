@@ -11,8 +11,8 @@ const ShowTurmas = () => {
         width: 150
       },
       {
-        label: 'Tipo',
-        field: 'tipo',
+        label: 'Código',
+        field: 'codigo',
         sort: 'asc',
         width: 150
       }

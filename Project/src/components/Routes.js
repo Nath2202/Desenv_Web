@@ -1,24 +1,26 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import DashboardPage from './pages/DashboardPage';
-import ProfilePage from './pages/ProfilePage';
-import TablesPage from './pages/TablesPage';
-import MapsPage from './pages/MapsPage';
-import NotFoundPage from './pages/NotFoundPage';
-import AddProfessor from './pages/AddProfessor';
+import DashboardCoordenador from './pages/Coordenador/DashboardCoordenador';
+import AddProfessor from './pages/Coordenador/AddProfessor';
+import ShowProfessor from './pages/Coordenador/ShowProfessores';
+import AddDisciplina from './pages/Coordenador/AddDisciplina';
+import ShowDisciplina from './pages/Coordenador/ShowDisciplinas';
+import AddTurma from './pages/Coordenador/AddTurmas';
+import ShowTurma from './pages/Coordenador/ShowTurmas';
 
 
 class Routes extends React.Component {
   render() {
     return (
       <Switch>
-        <Route path='/' exact component={DashboardPage} />
-        <Route path='/dashboard' component={DashboardPage} />
-        <Route path='/profile' component={ProfilePage} />
-        <Route path='/tables' component={TablesPage} />
-        <Route path='/maps' component={MapsPage} />
-        <Route path='/404' component={NotFoundPage}/>
-        <Route path='/AddProfessor' component={AddProfessor}/>
+        <Route path='/' exact component={DashboardCoordenador} />
+        <Route path='/dashboardCoordenador' component={DashboardCoordenador} />
+        <Route path='/addProfessor' component={AddProfessor}/>
+        <Route path='/showProfessor' component={ShowProfessor}/>
+        <Route path='/addDisciplina' component={AddDisciplina}/>
+        <Route path='/showDisciplina' component={ShowDisciplina}/>
+        <Route path='/addTurma' component={AddTurma}/>
+        <Route path='/showTurma' component={ShowTurma}/>
       </Switch>
     );
   }

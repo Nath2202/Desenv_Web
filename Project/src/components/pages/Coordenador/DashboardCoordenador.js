@@ -1,8 +1,7 @@
 import React from 'react';
 import { MDBRow } from 'mdbreact';
-import CoordenadorSection from './Coordenador/CoordenadorSection';
-import BreadcrumSection from '../BreadcrumSection';
-// import ModalSection from './sections/ModalSection';
+import CoordenadorSection from './CoordenadorSection';
+import BreadcrumSection from './BreadcrumSection';
 
 const DashboardCoordenador = () => {
   return (

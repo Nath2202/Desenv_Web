@@ -15,10 +15,10 @@ const CoordenadorSection = () => {
                 </div>
               </div>
               <MDBCardBody>
-                <MDBBtn tag="a" size="md" floating gradient="purple"> 
+                <MDBBtn tag="a" href="/AddProfessor.js" size="md" floating gradient="purple"> 
                   <MDBIcon icon="user-plus"></MDBIcon>
                 </MDBBtn>
-                <MDBBtn tag="a" size="md" floating gradient="peach"> 
+                <MDBBtn tag="a" href="/ShowProfessores.js" size="md" floating gradient="peach"> 
                   <MDBIcon icon="eye"></MDBIcon>
                 </MDBBtn>
               </MDBCardBody>
@@ -35,10 +35,10 @@ const CoordenadorSection = () => {
                 </div>
               </div>
               <MDBCardBody>
-              <MDBBtn tag="a" size="md" floating gradient="purple"> 
+              <MDBBtn tag="a" href="/AddDisciplina.js" size="md" floating gradient="purple"> 
                   <MDBIcon icon="user-plus"></MDBIcon>
                 </MDBBtn>
-                <MDBBtn tag="a" href="/AdminCardSection2.js" size="md" floating gradient="peach"> 
+                <MDBBtn tag="a" href="/ShowDisciplinas.js" size="md" floating gradient="peach"> 
                   <MDBIcon icon="eye"></MDBIcon>
                 </MDBBtn>
               </MDBCardBody>
@@ -55,10 +55,10 @@ const CoordenadorSection = () => {
                 </div>
               </div>
               <MDBCardBody>
-              <MDBBtn tag="a" size="md" floating gradient="purple"> 
+              <MDBBtn tag="a" href="/AddTurmas.js" size="md" floating gradient="purple"> 
                   <MDBIcon icon="user-plus"></MDBIcon>
                 </MDBBtn>
-                <MDBBtn tag="a" href="/AdminCardSection2.js" size="md" floating gradient="peach"> 
+                <MDBBtn tag="a" href="/ShowTurmas.js" size="md" floating gradient="peach"> 
                   <MDBIcon icon="eye"></MDBIcon>
                 </MDBBtn>
               </MDBCardBody>

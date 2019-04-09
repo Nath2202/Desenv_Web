@@ -1,30 +1,37 @@
-import React from 'react';
-import { MDBCard, MDBCardBody, MDBIcon, MDBRow, MDBCol } from 'mdbreact';
+import React from "react";
+import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBInput } from 'mdbreact';
 
 const AddProfessor = () => {
   return (
-    <MDBRow className="mb-4">
-        <MDBContainer>
+    <MDBContainer>
       <MDBRow>
         <MDBCol md="6">
           <form>
             <p className="h5 text-center mb-4">Cadastro de Disciplinas</p>
             <div className="grey-text">
               <MDBInput
-                label="Nome da Disciplina"
+                label="Nome"
                 icon=""
                 group
-                type="text"
-                validate
-                error="wrong"
-                success="right"
+                type="text"              
+              />
+              <MDBInput
+                label="Email"
+                icon=""
+                group
+                type="text"   
+              />
+              <MDBInput
+                label="Telefone"
+                icon=""
+                group
+                type="text"   
               />
               <MDBInput
                 label="Código da Disciplina"
                 icon=""
                 group
-                type="text"
-                validate
+                type="text"   
               />
             </div>
             <div className="text-center">
@@ -34,9 +41,7 @@ const AddProfessor = () => {
         </MDBCol>
       </MDBRow>
     </MDBContainer>
-      </MDBRow>
-  )
-}
+  );
+};
 
 export default AddProfessor;
-
