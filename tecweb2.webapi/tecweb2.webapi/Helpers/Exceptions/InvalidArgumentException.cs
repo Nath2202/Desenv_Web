@@ -11,6 +11,11 @@ namespace tecweb2.webapi.Helpers.Exceptions
         {
             Code = code;
         }
+        
+        public InvalidArgumentException(string message, ExceptionEnum code) : base(message)
+        {
+            Code = (int)code;
+        }
 
         public InvalidArgumentException(string message, int code) : base(message)
         {

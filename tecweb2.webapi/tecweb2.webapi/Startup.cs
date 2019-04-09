@@ -12,7 +12,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.IdentityModel.Tokens;
 using Swashbuckle.AspNetCore.Swagger;
-using tecweb2.webapi.Helpers.Swagger;
+using tecweb2.webapi.Contexts;
+using tecweb2.webapi.Extensions.Swagger;
 
 namespace tecweb2.webapi
 {
@@ -50,9 +51,9 @@ namespace tecweb2.webapi
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddMvc();
             
-//            services.AddDbContext<SqlContext>(option =>
-//                option.UseSqlServer(Configuration["ConnectionString"])
-//                    .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking), ServiceLifetime.Transient);
+            services.AddDbContext<SqlContext>(option =>
+                option.UseSqlServer(Configuration["ConnectionString"])
+                    .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking), ServiceLifetime.Transient);
 
             services.AddSwaggerGen(c =>
             {
@@ -110,7 +111,7 @@ namespace tecweb2.webapi
                 using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>()
                     .CreateScope())
                 {
-//                    serviceScope.ServiceProvider.GetService<SqlContext>().Database.Migrate();
+                    serviceScope.ServiceProvider.GetService<SqlContext>().Database.Migrate();
                 }
             }
             catch (Exception ex)

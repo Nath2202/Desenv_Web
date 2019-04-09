@@ -3,7 +3,7 @@ using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using tecweb2.webapi.Models.Proxy;
 
-namespace tecweb2.webapi.Helpers.Swagger
+namespace tecweb2.webapi.Extensions.Swagger
 {
     /// <summary>
     /// Adds the option to put the student Ra in the header on methods that require it and
