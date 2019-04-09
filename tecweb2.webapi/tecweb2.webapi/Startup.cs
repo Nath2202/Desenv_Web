@@ -127,12 +127,10 @@ namespace tecweb2.webapi
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-            
 
             app.UseAuthentication();
             
             app.UseCors("AllowAll");
-            
             
             app.UseSwagger();
             app.UseSwaggerUI(c =>
