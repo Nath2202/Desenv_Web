@@ -15,8 +15,5 @@ namespace tecweb2.webapi.Models.Entities
         
         [ForeignKey("TeacingPlanId")] public TeachingPlanEntity TeachingPlan { get; set; }
 
-        public Guid UserId { get; set; }
-        
-        [ForeignKey("UserId")] public UserEntity User { get; set; }
     }
 }

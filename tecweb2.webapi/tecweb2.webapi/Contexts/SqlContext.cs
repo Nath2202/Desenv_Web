@@ -42,5 +42,11 @@ namespace tecweb2.webapi.Contexts
         public DbSet<UserEntity> Users { get; set; }
 
         public DbSet<UserSubjectiveEntity> UserSubjectives { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            
+        }
     }
 }
