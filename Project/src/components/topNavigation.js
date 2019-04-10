@@ -38,18 +38,18 @@ class TopNavigation extends Component {
                         </MDBNavItem>
                     </MDBNavbarNav>
                     <MDBNavbarNav right>
-                        <MDBNavItem>
+                        {/* <MDBNavItem>
                             <a className="nav-link navbar-link" rel="noopener noreferrer" target="_blank" href=""><MDBIcon fab icon="facebook" /></a>
                         </MDBNavItem>
                         <MDBNavItem>
                             <a className="nav-link navbar-link" rel="noopener noreferrer" target="_blank" href=""><MDBIcon fab icon="twitter" /></a>
+                        </MDBNavItem> */}
+                        {/* <MDBNavItem>
+                            <a className="border border-light rounded mr-1 nav-link Ripple-parent" rel="noopener noreferrer" href="" target="_blank"><MDBIcon fab icon="" className="mr-2"/></a>
                         </MDBNavItem>
                         <MDBNavItem>
                             <a className="border border-light rounded mr-1 nav-link Ripple-parent" rel="noopener noreferrer" href="" target="_blank"><MDBIcon fab icon="github" className="mr-2"/></a>
-                        </MDBNavItem>
-                        <MDBNavItem>
-                            <a className="border border-light rounded mr-1 nav-link Ripple-parent" rel="noopener noreferrer" href="" target="_blank"><MDBIcon fab icon="github" className="mr-2"/></a>
-                        </MDBNavItem>
+                        </MDBNavItem> */}
                     </MDBNavbarNav>
                 </MDBCollapse>
             </MDBNavbar>

@@ -47,7 +47,7 @@ const CoordenadorSection = () => {
         <MDBCol xl="3" md="6" className="mb-r">
           <MDBCard className="cascading-admin-card">
               <div className="admin-up">
-              <MDBIcon icon="book-open" className="light-red darken-2"/>
+              <MDBIcon icon="chalkboard-teacher" className="yellow lighten-1"/>
                 <div className="data">
                   <h4>
                     <strong>Turmas</strong>
