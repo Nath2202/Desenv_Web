@@ -6,7 +6,7 @@ const TopNavigation = () => {
     return (
         <div className="sidebar-fixed position-fixed">
             <a href="#!" className="logo-wrapper waves-effect">
-            
+                <img src="./utils/logo_login.png" />
             </a>
             <MDBListGroup className="list-group-flush">
                 <NavLink exact={true} to="/" activeClassName="activeClass">
@@ -16,7 +16,7 @@ const TopNavigation = () => {
                     </MDBListGroupItem>
                 </NavLink>
                 {}
-                <NavLink to="/tables" activeClassName="activeClass">
+                <NavLink to="" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon icon="table" className="mr-3"/>
                         Plano de Ensino
